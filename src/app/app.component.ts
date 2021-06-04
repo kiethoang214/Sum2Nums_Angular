@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'GettingStarted';
+  num: number = 0;
   num1: number = 0 ;
   num2 : number = 0 ;
   result : number = 0 ;
+  // num1 = new FormControl('');
+  // num2 = new FormControl('');
+  // result: string = "";
 
   AddNumber() {
     // let number1 = Number(this.num1.value);

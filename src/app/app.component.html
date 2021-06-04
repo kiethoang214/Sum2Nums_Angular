@@ -1,11 +1,11 @@
 First number:
 <br>
-<input type="text" ngxNumberFormat="#,###,###,###,###,###.######" [allowNegative] = true [(ngModel)] = "num1">
+<input type='text' mask="separator" [allowNegativeNumbers]="true" [(ngModel)] = "num1"/>
 <br>
 Second number:
 <br>
-<input type="text" ngxNumberFormat="#,###,###,###,###,###.######" [allowNegative] = true [(ngModel)] = "num2">
+<input type='text' mask="separator" [allowNegativeNumbers]="true" [(ngModel)] = "num2"/>
 <br>
-Your sum is: <b>{{result | number}}</b>
+Your sum is: <b>{{result | mask: 'separator'}}</b>
 <br>
 <button (click) = "AddNumber()">Add Number</button> 

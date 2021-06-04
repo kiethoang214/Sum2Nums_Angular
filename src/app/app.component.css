@@ -1,0 +1,12 @@
+p {
+    font-family: Lato;
+  }
+  
+  div > label  { display: block;}
+  
+  div {
+    /* display: inline-block; */
+    margin-bottom:5px;
+    /* border-bottom: 1px solid rgba(0,0,0,0.5); */
+    padding: 0.25rem;
+  }
