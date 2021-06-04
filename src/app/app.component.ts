@@ -8,10 +8,9 @@ import { FormControl } from '@angular/forms';
 })
 export class AppComponent {
   title = 'GettingStarted';
-  num: number = 0;
-  num1: number = 0 ;
-  num2 : number = 0 ;
-  result : number = 0 ;
+  num1: any | number;
+  num2 : any | number;
+  result : any | number;
   // num1 = new FormControl('');
   // num2 = new FormControl('');
   // result: string = "";
