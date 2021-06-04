@@ -1,21 +1,22 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule} from '@angular/forms';
+import { NgModule } from '@angular/core';
+import {FormsModule} from '@angular/forms'
+import { NgxNumberFormatModule } from 'ngx-number-format';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 @NgModule({
-
-  declarations: [                               //define components
+  declarations: [
     AppComponent
   ],
-
-  imports: [                                    //import module
+  imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgxNumberFormatModule
   ],
-  providers: [],                                //service for all component in this module
-  bootstrap: [AppComponent]                     //root module, include root component
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
